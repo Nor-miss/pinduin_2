@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name" translatable="false">My Application</string>
+    <string name="button_start">START</string>
+    <string name="description_image_button_1">карты</string>
+    <string name="description_image_button_2">заметки</string>
+    <string name="image_description">козы пингвины</string>
+
+</resources>

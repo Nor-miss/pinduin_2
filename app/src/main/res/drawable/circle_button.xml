@@ -1,0 +1,8 @@
+<!-- res/drawable/circle_button.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#E0E1DD" />  <!-- Цвет фона (например, белый) -->
+    <corners android:radius="1000dp" />  <!-- Делаем круг (радиус больше размера кнопки) -->
+    <stroke
+        android:width="2dp"
+        android:color="#000000" />  <!-- Чёрная обводка -->
+</shape>

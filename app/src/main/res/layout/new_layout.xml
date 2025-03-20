@@ -1,0 +1,56 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    tools:context=".MainActivity">
+
+    <!-- Белый фон (верхняя половина экрана) -->
+    <View
+        android:id="@+id/whiteBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white_t"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/blueBackground" />
+
+    <!-- Голубой фон (нижняя половина экрана) -->
+    <View
+        android:id="@+id/blueBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/whiteBackground"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.5" />
+
+    <!-- Линия (разделитель) -->
+    <View
+        android:id="@+id/line"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@color/back"
+        app:layout_constraintTop_toBottomOf="@id/whiteBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="86dp"
+        android:layout_height="77dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ping"
+        android:contentDescription="@string/image_description"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
