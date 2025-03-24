@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:minHeight="48dp"
+        android:hint="@string/hint_title"
+        android:inputType="textCapSentences|textAutoCorrect"
+        android:importantForAutofill="auto"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"/>
+
+    <EditText
+        android:id="@+id/editContent"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:minHeight="120dp"
+        android:hint="@string/hint_content"
+        android:inputType="textMultiLine|textCapSentences"
+        android:importantForAutofill="auto"
+        android:gravity="top"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

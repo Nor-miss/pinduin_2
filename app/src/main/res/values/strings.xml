@@ -4,5 +4,7 @@
     <string name="description_image_button_1">карты</string>
     <string name="description_image_button_2">заметки</string>
     <string name="image_description">козы пингвины</string>
+    <string name="hint_title">Заголовок</string>
+    <string name="hint_content">Содержание</string>
 
 </resources>
