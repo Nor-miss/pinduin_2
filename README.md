@@ -14,10 +14,13 @@
 
 ## Инструкция по сборке
 
-1.  **Клонируйте репозиторий:**
-    bash
-    git clone https://github.com/Nor-miss/penguin.git
-2. **Откройте проект в Android Studio.**
-3. **Синхронизируйте Gradle.**
-4. **Соберите проект: "Build" -> "Make Project".**
-5. **Запустите приложение на устройстве или эмуляторе: "Run" -> "Run 'app'".**
+1.  **Очистка проекта**
+    ./gradlew clean
+2. **Сборка debug-версии**
+   ./gradlew assembleDebug
+4. **Сборка release-версии**
+   ./gradlew assembleRelease
+6. **Установка на подключенное устройство**
+   ./gradlew installDebug
+8. **(Или для release)**
+   ./gradlew installRelease
