@@ -2,11 +2,11 @@ package com.example.myapplication;
 
 import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,9 +17,9 @@ import java.util.List;
 
 public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.ViewHolder> {
 
-    private Context context;
-    private List<Note> notesList;
-    private DatabaseHelper db;
+    private final Context context;
+    private final List<Note> notesList;
+    private final DatabaseHelper db;
 
     public NotesAdapter(Context context, List<Note> notesList) {
         this.context = context;
@@ -41,16 +41,8 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.ViewHolder> 
         holder.titleTextView.setText(note.getTitle());
         holder.contentTextView.setText(note.getContent());
 
-        // Обработка клика для редактирования
-        holder.itemView.setOnClickListener(v -> {
-            showEditNoteDialog(note, position);
-        });
-
-        // Обработка долгого нажатия для удаления
-        holder.itemView.setOnLongClickListener(v -> {
-            showDeleteConfirmationDialog(note, position);
-            return true;
-        });
+        holder.itemView.setOnClickListener(v -> showEditNoteDialog(note, position));
+        holder.deleteButton.setOnClickListener(v -> showDeleteConfirmationDialog(note, position));
     }
 
     @Override
@@ -58,14 +50,16 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.ViewHolder> 
         return notesList.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
-        public TextView titleTextView;
-        public TextView contentTextView;
+    public static class ViewHolder extends RecyclerView.ViewHolder {
+        final TextView titleTextView;
+        final TextView contentTextView;
+        final ImageButton deleteButton;
 
         public ViewHolder(View itemView) {
             super(itemView);
             titleTextView = itemView.findViewById(R.id.titleTextView);
             contentTextView = itemView.findViewById(R.id.contentTextView);
+            deleteButton = itemView.findViewById(R.id.deleteButton);
         }
     }
 

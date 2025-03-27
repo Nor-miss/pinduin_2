@@ -18,4 +18,13 @@
         android:layout_height="wrap_content"
         android:textSize="14sp" />
 
+    <ImageButton
+        android:id="@+id/deleteButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="end"
+        android:src="@drawable/del"
+        android:contentDescription="@string/delete_note_desc"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+
 </LinearLayout>

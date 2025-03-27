@@ -6,5 +6,11 @@
     <string name="image_description">козы пингвины</string>
     <string name="hint_title">Заголовок</string>
     <string name="hint_content">Содержание</string>
-
+    <string name="add_note_text">Добавить заметку</string>
+    <string name="back_button_desc">Кнопка назад</string>
+    <string name="recycler_view_desc">Список заметок</string>
+    <string name="delete_note_desc">Удалить заметку</string>
+    <string name="delete_confirmation">Удалить эту заметку?</string>
+    <string name="delete">Удалить</string>
+    <string name="cancel">Отмена</string>
 </resources>
