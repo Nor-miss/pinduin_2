@@ -30,21 +30,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="8dp" />
 
-    <!-- Кнопка "Назад" в правом верхнем углу -->
-    <ImageButton
-        android:id="@+id/notesButton"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/img_5"
-        android:contentDescription="@string/back_button_desc"
-        android:padding="12dp"
-        android:scaleType="centerInside"
-        android:minWidth="48dp"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
