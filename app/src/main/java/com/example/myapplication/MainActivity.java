@@ -2,7 +2,6 @@ package com.example.myapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -41,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         jokeTextView = findViewById(R.id.jokeTextView);
         ImageButton mapButton = findViewById(R.id.imageButton);
         ImageButton notesButton = findViewById(R.id.notesButton);
+        ImageButton startButton = findViewById(R.id.button); // Объявление кнопки Start
 
         // Загрузка анекдота дня
         loadDailyJoke();
@@ -54,6 +54,12 @@ public class MainActivity extends AppCompatActivity {
         // Обработчик для кнопки заметок
         notesButton.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, NotesActivity.class);
+            startActivity(intent);
+        });
+
+        // Обработчик для кнопки Start
+        startButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, FloatingActivity.class);
             startActivity(intent);
         });
     }

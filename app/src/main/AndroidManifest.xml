@@ -36,6 +36,8 @@
 
         <activity android:name=".NotesActivity" />
 
+        <activity android:name=".FloatingActivity" />
+
 
     </application>
 </manifest>
