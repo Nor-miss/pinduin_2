@@ -24,6 +24,7 @@
         android:layout_height="24dp"
         android:layout_gravity="end"
         android:src="@drawable/del"
+        android:scaleType="fitCenter"
         android:contentDescription="@string/delete_note_desc"
         android:background="?attr/selectableItemBackgroundBorderless"/>
 
