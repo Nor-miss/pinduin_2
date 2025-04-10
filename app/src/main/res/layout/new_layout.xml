@@ -52,5 +52,27 @@
         app:srcCompat="@drawable/ping"
         android:contentDescription="@string/image_description"/>
 
+    <ImageButton
+        android:id="@+id/leftArrow"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/levo"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/previous_animal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/rightArrow"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/pravo"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/next_animal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
