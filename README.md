@@ -1,4 +1,4 @@
-# Funny swimming penguin
+# Funny swimming penguin 🐧
 
 ## Описание
 
